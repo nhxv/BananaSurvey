@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async></script>
+</head>
+<body>
+    <header class="container">    
+        <h1 id="title">Banana World</h1>
+        <p id="description">How can we change our Banana World?</p>
+    </header>
+    <main id="content" class="container">
+        <form action="#" id="survey-form">
+            <div id="name-area" class="area">
+                <label for="name" id="name-label">Name</label>
+                <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div id="email-area" class="area">
+                <label for="email" id="email-label">Email</label>
+                <input class="input-field" type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div id="number-area" class="area">            
+                <label for="number" id="number-label">The Number</label>
+                <input class="input-field" type="number" id="number" name="Number" min="0" max="42" placeholder="0-42" required>
+            </div>
+            <div id="dropdown-area" class="area">
+                <label for="fruit" id="dropdown-label">What's your chosen fruit?</label>
+                <select class="input-field" type="text" id="dropdown" name="fruit">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="grapes">Grapes</option>
+                </select>
+            </div>
+            <div id="checkbox-area" class="area">
+                <p id="checkbox-suggestion" class="list-label">What should be added to our World?</p>
+                <ul id="checkbox-list" class="list">
+                    <li>
+                        <input class="styled-checkbox" type="checkbox" name="checkbox-button" value="1" id="first-checkbox-suggestion">
+                        <label for="first-checkbox-suggestion">Cloudy Rock</label>
+                    </li>
+                    <li>
+                        <input class="styled-checkbox" type="checkbox" name="checkbox-button" value="2" id="second-checkbox-suggestion">
+                        <label for="second-checkbox-suggestion">Not The Moon</label>
+                    </li>
+                    <li>
+                        <input class="styled-checkbox" type="checkbox" name="checkbox-button" value="3" id="third-checkbox-suggestion">
+                        <label for="third-checkbox-suggestion">Vanishing Train</label>
+                    </li>
+                    <li>
+                        <input class="styled-checkbox" type="checkbox" name="checkbox-button" value="4" id="fourth-checkbox-suggestion">
+                        <label for="fourth-checkbox-suggestion">Dragonfly</label>
+                    </li>
+                </ul>
+            </div>
+            <div id="radio-area" class="area">
+                <p id="radio-suggestion" class="list-label">What must be done?</p>
+                <ul id="radio-list" class="list">
+                    <li>
+                        <input name="radio-button" value="1" type="radio" id="first-radio-suggestion">
+                        <label for="first-radio-suggestion" class="radio-label">Kill the bug</label>
+                    </li>
+                    <li>
+                        <input name="radio-button" value="2" type="radio" id="second-radio-suggestion">
+                        <label for="second-radio-suggestion" class="radio-label">Forget the girl</label> 
+                    </li>
+                    <li>
+                        <input name="radio-button" value="3" type="radio" id="third-radio-suggestion">
+                        <label for="third-radio-suggestion" class="radio-label">Ignore the prophet</label>
+                    </li>              
+                </ul>
+            </div>
+            <div id="text-area" class="area">
+                <label for="comment" id="textarea-label">Comments</label>
+                <textarea class="input-field" name="comment" id="comment" placeholder="Enter your comment..."></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        
+    </main>
+
+</body>
+</html>
