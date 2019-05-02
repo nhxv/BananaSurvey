@@ -109,11 +109,6 @@ main {
     background: #E9E9E9;
 }
 
-/* Box checked */
-.styled-checkbox:checked + label:before {
-    background: white;
-}
-
 /* Checkmark.*/
 .styled-checkbox:checked + label:after {
     content: '';
@@ -127,7 +122,6 @@ main {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-
 }
 
 /* radio custom */
