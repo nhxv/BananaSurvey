@@ -118,18 +118,14 @@ main {
 .styled-checkbox:checked + label:after {
     content: '';
     position: absolute;
-    left: 5px;
-    top: 12px;
-    background: #1e90ff;
-    width: 2px;
-    height: 2px;
-    box-shadow: 
-    2px 0 0 #1e90ff,
-    4px 0 0 #1e90ff,
-    4px -2px 0 #1e90ff,
-    4px -4px 0 #1e90ff,
-    4px -6px 0 #1e90ff,
-    4px -8px 0 #1e90ff;
+    left: 8px;
+    top: 5px;
+    width: 4px;
+    height: 8px;
+    border: 1px solid #1e90ff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 
 }
@@ -176,8 +172,6 @@ main {
     top: 5px;
     left: 5px;
     border-radius: 100%;
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
 }
 [type="radio"]:not(:checked) + label:after {
     opacity: 0;
@@ -225,7 +219,6 @@ textarea {
     border-bottom: 1px solid #1e90ff;
     border-radius: 0px;
     color: #1e90ff;
-    transition: 0.1s;
 }
 
 
