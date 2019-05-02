@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    background: #F8F9F9;    
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+header {
+    margin: 10px 0 10px 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 200;
+    color: #1e90ff;
+}
+
+main {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #D6DBDF;
+    padding: 10px 0;
+    outline: none;
+    min-width: 60%;
+    font-family: "Barlow", san-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.input-field:focus {
+    border-bottom: 1px solid #1e90ff; 
+    transition: 0.5s;
+}
+
+::placeholder {
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    overflow: visible;
+}
+
+.area {
+    margin-bottom: 30px;
+}
+
+.list-label {
+    margin-bottom: 15px;
+}
+
+.list {
+    list-style: none;
+}
+
+/* checkbox custom */
+.styled-checkbox {
+    /* take it out of document flow */
+    position: absolute; 
+    /* hide it */
+    opacity: 0; 
+}
+
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0px;
+}
+
+/* Box. */
+.styled-checkbox + label:before {
+    content: '';
+    padding-top: 2px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #D6DBDF;
+    border-radius: 4px;
+}
+
+/* Box hover */
+.styled-checkbox:hover + label:before {
+    background: #E9E9E9;
+}
+
+/* Box checked */
+.styled-checkbox:checked + label:before {
+    background: white;
+}
+
+/* Checkmark.*/
+.styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    background: #1e90ff;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+    2px 0 0 #1e90ff,
+    4px 0 0 #1e90ff,
+    4px -2px 0 #1e90ff,
+    4px -4px 0 #1e90ff,
+    4px -6px 0 #1e90ff,
+    4px -8px 0 #1e90ff;
+    transform: rotate(45deg);
+
+}
+
+/* radio custom */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: black;
+}
+
+/* customize radio border */
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D6DBDF;
+    border-radius: 100%;
+    background: white;
+}
+
+/* customize the dot */
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #1e90ff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="radio"]:hover + label:before {
+    background: #E9E9E9;
+}
+
+#comment {
+    display: block;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+#textarea-label {
+    margin-bottom: 20px;
+}
+
+#submit {
+    background: #1e90ff;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    width: 100px;
+}
+
+#submit:hover {
+    background: white;
+    border-bottom: 1px solid #1e90ff;
+    border-radius: 0px;
+    color: #1e90ff;
+    transition: 0.1s;
+}
+
+
+/* container max-width: min-width - (2*32px) */
+@media (min-width: 320px) {
+    .container {
+        max-width: 256px;
+    }
+
+    .input-field {
+        max-width: 60%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 416px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 704px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 928px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1136px;
+    }
+}
