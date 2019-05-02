@@ -27,6 +27,10 @@ h1 {
     color: #1e90ff;
 }
 
+#description {
+    padding-left: 30px;
+}
+
 main {
     background: white;
     border-radius: 5px;
