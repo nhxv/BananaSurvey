@@ -40,12 +40,13 @@ main {
 
 .input-field {
     display: block;
+    border: none;
+    outline: none;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #D6DBDF;
     padding: 10px 0;
-    outline: none;
     min-width: 60%;
     font-family: "Barlow", san-serif;
     font-size: 24px;
