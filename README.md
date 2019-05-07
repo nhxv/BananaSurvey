@@ -1,4 +1,4 @@
-## [Survey Form] (https://nhxv.github.io/FCC-banana-survey/)
+## [Survey Form](https://nhxv.github.io/FCC-banana-survey/)
 A Responsive Web Design Projects
 
 ### Requirements
