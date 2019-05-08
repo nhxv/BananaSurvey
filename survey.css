@@ -83,11 +83,9 @@ main {
     list-style: none;
 }
 
-/* checkbox custom */
+/* checkbox custom, hide the default checkbox */
 .styled-checkbox {
-    /* take it out of document flow */
     position: absolute; 
-    /* hide it */
     opacity: 0; 
 }
 
@@ -97,7 +95,7 @@ main {
     padding: 0px;
 }
 
-/* Box. */
+/* box */
 .styled-checkbox + label:before {
     content: '';
     padding-top: 2px;
@@ -111,12 +109,12 @@ main {
     border-radius: 4px;
 }
 
-/* Box hover */
+/* box hover */
 .styled-checkbox:hover + label:before {
     background: #E9E9E9;
 }
 
-/* Checkmark.*/
+/* checkmark.*/
 .styled-checkbox:checked + label:after {
     content: '';
     position: absolute;
@@ -174,11 +172,13 @@ main {
     left: 5px;
     border-radius: 100%;
 }
+
 [type="radio"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
+
 [type="radio"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -201,6 +201,7 @@ textarea {
     margin-bottom: 20px;
 }
 
+/* customize button */
 #submit {
     background: #1e90ff;
     padding: 10px 15px;
@@ -223,7 +224,7 @@ textarea {
 }
 
 
-/* container max-width: min-width - (2*32px) */
+/* container max-width: min-width - (2*32px) (from bulma) */
 @media (min-width: 320px) {
     .container {
         max-width: 256px;
