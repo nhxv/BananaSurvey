@@ -1,5 +1,5 @@
-## [Survey Form](https://nhxv.github.io/FCC-banana-survey/)
-A Responsive Web Design Projects
+## [Survey Form](https://nhxv.github.io/fcc-banana-survey/)
+A Responsive Web Design Projects.
 
 ### Requirements
 >Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
